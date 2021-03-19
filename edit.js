@@ -21,15 +21,18 @@ let myDate = function(day, month, year) {
         return this.year;
     }
     this.setDate = function(day,month,year) {
-        this.setDay(day);
-        this.setMonth(month);
-        this.setYear(year);
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        // this.setDay(day);
+        // this.setMonth(month);
+        // this.setYear(year);
     }
     this.toString = function() {
-        day = this.getDay();
-        month = this.getMonth();
-        year = this.getYear();
-        return (`${day}/${month}/${year}`);
+        // day = this.getDay();
+        // month = this.getMonth();
+        // year = this.getYear();
+        return (`${this.day}/${this.month}/${this.year}`);
     }
 };
 // let date = new myDate(10, 08, 1991);
